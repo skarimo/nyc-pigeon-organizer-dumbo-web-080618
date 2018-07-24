@@ -6,7 +6,7 @@ def nyc_pigeon_organizer(data)
     v.each do |att, names|
       names.each do |name|
         new_hash[name] = {} unless new_hash.include?(name)
-        new_hash[name][k] = [] unless new_hash[name].include?([k])
+        new_hash[name][k] = [] unless new_hash[name][k] != nil
           if names.include?(name)
              new_hash[name][k] << att.to_s
           end
