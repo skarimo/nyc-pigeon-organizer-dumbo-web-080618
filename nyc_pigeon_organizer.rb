@@ -8,7 +8,7 @@ def nyc_pigeon_organizer(data)
         new_hash[name] = {} unless new_hash.include?(name)
         new_hash[name][k] = []
           if names.include?(name)
-             new_hash[name][k] << att
+             new_hash[name][k] << att.to_s
           end
     end
   end
